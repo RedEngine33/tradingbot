@@ -17,7 +17,7 @@ def webhook():
     message = f"""
 🚨 *New Signal Alert* 🚨
 *Pair:* {data.get('pair')}
-*Type:* {data.get('type').upper()}
+type = (data.get("type") or "text").upper()
 *Entry:* {data.get('price')}
 *SL:* {data.get('sl')}
 *TP:* {data.get('tp')}
